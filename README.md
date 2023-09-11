@@ -2,7 +2,25 @@
 
 Boilerplate project for uploading a docker image of a nestjs project with the prisma ORM via serverless to be used in a aws lambda.
 
-# installation
+# Installation
+
+Install the dependencies: 
+
+```sh
+yarn install
+```
+
+Make sure you've installed the needed peer dependencies:
+
+```sh
+npm i -g serverless serverless-offline
+```
+
+And also, install the plugin from serverless:
+
+```sh
+sls plugin install -n serverless-offline
+```
 
 # configuration
 
@@ -21,4 +39,4 @@ Boilerplate project for uploading a docker image of a nestjs project with the pr
       "dns": ["10.0.0.2", "8.8.8.8"]
     }
     ```
-    E atualize o docker `sudo systemctl restart docker`
+    E atualize o docker `sudo systemctl restart docker`.
