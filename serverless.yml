@@ -1,0 +1,22 @@
+service: lambda-docker-serverless-nestjs-prisma
+frameworkVersion: '3'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  ecr:
+    images:
+      lambda-docker-serverless-nestjs-prisma:
+        path: ./
+
+functions:
+  api:
+    name: lambda-docker-serverless-nestjs-prisma
+    image: "lambda-docker-serverless-nestjs-prisma"
+    events:
+      - httpApi:
+          path: /api
+          method: get

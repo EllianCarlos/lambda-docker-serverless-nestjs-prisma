@@ -1,5 +1,5 @@
 import { Callback, Context, Handler } from 'aws-lambda';
-import { bootstrap } from 'bootstrap';
+import { bootstrap } from './bootstrap';
 
 let server: Handler;
 
