@@ -6,17 +6,17 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs20.x
   ecr:
     images:
-      lambda-docker-serverless-nestjs-prisma:
+      baseimage:
         path: ./
 
 functions:
   api:
     name: lambda-docker-serverless-nestjs-prisma
-    image: "lambda-docker-serverless-nestjs-prisma"
+    image: baseimage 
     events:
       - httpApi:
           path: /api
-          method: get
+          method: GET
