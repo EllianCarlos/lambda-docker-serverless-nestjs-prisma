@@ -26,17 +26,17 @@ sls plugin install -n serverless-offline
 
 # faq
 
-- Algo como o erro: `npm ERR! errno EAI_AGAIN` pode ser resolvido com:
-  - Reinstalação do proxy do npm:
+- Somethign like: `npm ERR! errno EAI_AGAIN` can be solved with:
+  - Re-install npm proxy:
     ```sh
     npm config rm proxy
     npm config rm https-proxy
     ```
-    E atualização do docker `sudo systemctl restart docker `
-  - Se ainda não der certo adicione o arquivo `/etc/docker/daemon.json` com o conteúdo:
+    And update the docker `sudo systemctl restart docker `
+  - If nothing works just edit `/etc/docker/daemon.json` with the content:
     ```json
     {
       "dns": ["10.0.0.2", "8.8.8.8"]
     }
     ```
-    E atualize o docker `sudo systemctl restart docker`.
+    And then update the docker `sudo systemctl restart docker`.
