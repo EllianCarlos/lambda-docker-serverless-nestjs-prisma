@@ -10,16 +10,10 @@ Install the dependencies:
 yarn install
 ```
 
-Make sure you've installed the needed peer dependencies:
-
-```sh
-npm i -g serverless serverless-offline
-```
-
 And also, install the plugin from serverless:
 
 ```sh
-sls plugin install -n serverless-offline
+npx sls plugin install -n serverless-offline
 ```
 
 # configuration
