@@ -7,6 +7,7 @@ COPY yarn.lock .
 COPY tsconfig.json . 
 COPY tsconfig.build.json . 
 COPY src ./src
+COPY prisma ./prisma
 
 RUN yarn install --production=false
 
