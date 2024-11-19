@@ -1,6 +1,8 @@
 # lambda-docker-serverless-nestjs-prisma
 
-Boilerplate project for uploading a docker image of a nestjs project with the prisma ORM via serverless to be used in a aws lambda.
+Boilerplate project for uploading a docker image of a nestjs project with the prisma ORM via serverless to be used in a aws lambda. 
+
+This is nixos friendly! Check: https://github.com/pimeys/nix-prisma-example to instructions on how to use with nix! 
 
 # Installation
 
@@ -16,11 +18,11 @@ And also, install the plugin from serverless:
 npx sls plugin install -n serverless-offline
 ```
 
-# configuration
+# Configuration
 
-# faq
+# FAQ
 
-- Somethign like: `npm ERR! errno EAI_AGAIN` can be solved with:
+- Something like: `npm ERR! errno EAI_AGAIN` can be solved with:
   - Re-install npm proxy:
     ```sh
     npm config rm proxy
